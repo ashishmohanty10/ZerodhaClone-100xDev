@@ -2,7 +2,7 @@ import React from "react";
 import Landing from "../assets/landing.png";
 import Img2 from "../assets/largest-broker.svg";
 import Button from "../components/Button";
-import PressLogo from "../assets/press-logos.svg";
+import PressLogo from "../assets/press-logos.png";
 export const Home = () => {
   return (
     <>
@@ -34,7 +34,7 @@ export const Home = () => {
               order volumes in India daily by trading and investing in:
             </p>
 
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-4">
               <div>
                 <li>Futures and Options</li>
                 <li>Commodity derivatives</li>
