@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../assets/logo.svg";
 import { NavLinks } from "./NavLinks";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
     <div className="py-5 border-b-2 border-slate-200">
       <div className="container">
@@ -10,7 +18,7 @@ const Navbar = () => {
             <img src={Logo} alt="" />
           </div>
 
-          <div className="flex justify-between items-center space-x-5 ">
+          <ul className="flex justify-between items-center space-x-5 ">
             {NavLinks.map(({ id, name }) => (
               <li
                 key={id}
@@ -19,7 +27,11 @@ const Navbar = () => {
                 {name}
               </li>
             ))}
-          </div>
+
+            <li className="list-none" onClick={handleMenu}>
+              <FontAwesomeIcon icon={menu ? faXmark : faBars} />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
