@@ -2,6 +2,7 @@ import React from "react";
 import Landing from "../assets/landing.png";
 import Img2 from "../assets/largest-broker.svg";
 import Button from "../components/Button";
+import PressLogo from "../assets/press-logos.svg";
 export const Home = () => {
   return (
     <>
@@ -45,6 +46,10 @@ export const Home = () => {
                 <li>Direct mutual funds</li>
                 <li>Bonds and Govt. Securities</li>
               </div>
+            </div>
+
+            <div>
+              <img src={PressLogo} alt="" />
             </div>
           </div>
         </div>
