@@ -6,8 +6,8 @@ import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Products from "./pages/Product";
 import Support from "./pages/Support";
-import ThemeProvider from "./context/ThemeProvider";
 import Footer from "./components/Footer";
+import ThemeProvider from "./context/ThemeProvider";
 
 const App = () => {
   return (
