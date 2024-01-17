@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Products from "./pages/Product";
 import Support from "./pages/Support";
 import ThemeProvider from "./context/ThemeProvider";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/support" element={<Support />} />
           </Routes>
+          <Footer />
         </ThemeProvider>
       </Router>
     </>
