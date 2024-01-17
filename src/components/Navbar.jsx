@@ -20,8 +20,8 @@ const Navbar = () => {
   const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
 
   return (
-    <div className={darkTheme ? "dark" : ""}>
-      <div className="py-5 border-b-2 border-slate-200 sticky top-0 bg-white">
+    <div className={darkTheme ? "dark sticky top-0" : "sticky top-0"}>
+      <div className="py-5 border-b-2 border-slate-200 sticky top-0 bg-white dark:bg-slate-800 dark:border-primaryColor">
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="w-[20vh]">
@@ -32,7 +32,7 @@ const Navbar = () => {
               {NavLinks.map(({ id, name }) => (
                 <li
                   key={id}
-                  className="list-none hover:text-primaryColor duration-75"
+                  className="list-none hover:text-primaryColor duration-75 dark:text-slate-50 dark:hover:text-primaryColor"
                 >
                   <Link to={id} target="_self">
                     {name}
