@@ -3,7 +3,11 @@ import Landing from "../assets/landing.png";
 import Img2 from "../assets/largest-broker.svg";
 import Button from "../components/Button";
 import PressLogo from "../assets/press-logos.png";
+import Ecosystem from "../assets/ecosystem.png";
 import { ThemeContext } from "../context/ThemeProvider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 export const Home = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
   return (
@@ -53,6 +57,69 @@ export const Home = () => {
 
               <div>
                 <img src={PressLogo} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div>
+              <h3 className="text-3xl font-medium mb-5">
+                Trust with confidence
+              </h3>
+
+              <div className="mb-8">
+                <h4 className="text-xl font-medium">Customer-first always</h4>
+                <p className="mt-2">
+                  That's why 1.3+ crore customers trust Zerodha with ₹3.5+ lakh
+                  crores worth of equity investments.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-xl font-medium">No spam or gimmicks</h4>
+                <p className="mt-2">
+                  No gimmicks, spam, "gamification", or annoying push
+                  notifications. High quality apps that you use at your pace,
+                  the way you like.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-xl font-medium">The Zerodha universe</h4>
+                <p className="mt-2">
+                  Not just an app, but a whole ecosystem. Our investments in 30+
+                  fintech startups offer you tailored services specific to your
+                  needs.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-medium">Do better with money</h4>
+                <p className="mt-2">
+                  With initiatives like Nudge and Kill Switch, we don't just
+                  facilitate transactions, but actively help you do better with
+                  your money.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-center flex-col">
+              <img src={Ecosystem} alt="" />
+
+              <div className="flex justify-center items-center gap-5">
+                <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+                  <a href="" className="text-base">
+                    Explore Our Products
+                  </a>
+                  <FontAwesomeIcon icon={faArrowRight} size="xs" />
+                </div>
+
+                <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+                  <a href="" className="text-base">
+                    Try Our Kit
+                  </a>
+                  <FontAwesomeIcon icon={faArrowRight} size="xs" />
+                </div>
               </div>
             </div>
           </div>
