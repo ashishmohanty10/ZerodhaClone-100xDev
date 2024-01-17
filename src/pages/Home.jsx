@@ -173,7 +173,7 @@ export const Home = () => {
                 world covering everything from the basics to advanced trading.
               </p>
 
-              <div className="flex justify-start items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+              <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
                 <a href="" className="text-base">
                   Varsity
                 </a>
@@ -185,7 +185,7 @@ export const Home = () => {
                 India for all your market related queries.
               </p>
 
-              <div className="flex justify-start items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+              <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
                 <a href="" className="text-base">
                   Trading Q&A
                 </a>

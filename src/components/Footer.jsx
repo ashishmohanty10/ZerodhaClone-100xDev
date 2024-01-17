@@ -118,7 +118,7 @@ const Footer = () => {
                 href=""
                 className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
               >
-                For investo's attention
+                For investor's attention
               </a>
               <a
                 href=""
