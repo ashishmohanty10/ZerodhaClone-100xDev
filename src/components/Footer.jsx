@@ -70,6 +70,63 @@ const Footer = () => {
               find anyone claiming to be part of Zerodha and offering such
               services, please create a ticket here.
             </p>
+
+            <div className="text-center flex flex-wrap justify-center items-center space-x-10 mt-4">
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                NSE
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                BSE
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                MCX
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                Terms & Conditions
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                Policies & procedures
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                Disclosure
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                For investo's attention
+              </a>
+              <a
+                href=""
+                className="text-xs text-slate-400 font-medium hover:text-primaryColor duration-75"
+              >
+                Investor charter
+              </a>
+            </div>
           </div>
         </div>
       </div>

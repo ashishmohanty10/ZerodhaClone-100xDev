@@ -133,6 +133,13 @@ export const Home = () => {
                 We pioneered the concept of discount broking and price
                 transparency in India. Flat fees and no hidden charges.
               </p>
+
+              <div className="flex justify-start items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+                <a href="" className="text-base">
+                  See Pricing
+                </a>
+                <FontAwesomeIcon icon={faArrowRight} size="xs" />
+              </div>
             </div>
 
             <div className="grid grid-cols-2 justify-center items-center">
