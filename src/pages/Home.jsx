@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Landing from "../assets/landing.png";
 import Img2 from "../assets/largest-broker.svg";
 import Button from "../components/Button";
 import PressLogo from "../assets/press-logos.png";
+import { ThemeContext } from "../context/ThemeProvider";
 export const Home = () => {
+  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
   return (
-    <>
+    <div className={darkTheme ? "dark" : ""}>
       <div className="container">
-        <div className="flex flex-col justify-center items-center py-16">
+        <div className="flex flex-col justify-center items-center py-16 dark:bg-slate-800">
           <img src={Landing} alt="" className="w-[1000px] mb-4" />
 
           <h1 className="text-4xl font-medium mb-4">Invest in everything</h1>
@@ -54,6 +56,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

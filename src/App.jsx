@@ -6,19 +6,22 @@ import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Products from "./pages/Product";
 import Support from "./pages/Support";
+import ThemeProvider from "./context/ThemeProvider";
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/support" element={<Support />} />
-        </Routes>
+        <ThemeProvider>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/support" element={<Support />} />
+          </Routes>
+        </ThemeProvider>
       </Router>
     </>
   );
