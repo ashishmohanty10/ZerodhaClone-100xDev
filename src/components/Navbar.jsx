@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../assets/logo.svg";
 import { NavLinks } from "./NavLinks";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
@@ -24,7 +24,9 @@ const Navbar = () => {
                 key={id}
                 className="list-none hover:text-primaryColor duration-75"
               >
-                {name}
+                <Link to={id} target="_self">
+                  {name}
+                </Link>
               </li>
             ))}
 
