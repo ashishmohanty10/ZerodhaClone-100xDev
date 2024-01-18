@@ -6,8 +6,9 @@ import PressLogo from "../assets/press-logos.png";
 import Ecosystem from "../assets/ecosystem.png";
 import Education from "../assets/index-education.svg";
 import { ThemeContext } from "../context/ThemeProvider";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import CTA from "../components/CTA";
 
 export const Home = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
@@ -108,20 +109,22 @@ export const Home = () => {
             <div className="flex justify-center items-center flex-col">
               <img src={Ecosystem} alt="" />
 
-              <div className="flex justify-center items-center gap-5">
-                <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+              <div className="flex justify-center items-center gap-10">
+                <CTA title={"Explore Our Products"} />
+                {/* <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
                   <a href="" className="text-base">
                     Explore Our Products
                   </a>
                   <FontAwesomeIcon icon={faArrowRight} size="xs" />
-                </div>
+                </div> */}
 
-                <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+                <CTA title={"Try Our Kit"} />
+                {/* <div className="flex justify-center items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
                   <a href="" className="text-base">
                     Try Our Kit
                   </a>
                   <FontAwesomeIcon icon={faArrowRight} size="xs" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -134,12 +137,13 @@ export const Home = () => {
                 transparency in India. Flat fees and no hidden charges.
               </p>
 
-              <div className="flex justify-start items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
+              <CTA title={"See Pricing"} />
+              {/* <div className="flex justify-start items-center gap-x-2 text-primaryColor font-medium hover:text-black duration-75">
                 <a href="" className="text-base">
                   See Pricing
                 </a>
                 <FontAwesomeIcon icon={faArrowRight} size="xs" />
-              </div>
+              </div> */}
             </div>
 
             <div className="grid grid-cols-2 justify-center items-center">
@@ -173,24 +177,27 @@ export const Home = () => {
                 world covering everything from the basics to advanced trading.
               </p>
 
-              <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
+              <CTA title={"Varsity"} />
+              {/* <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
                 <a href="" className="text-base">
                   Varsity
                 </a>
                 <FontAwesomeIcon icon={faArrowRight} size="xs" />
-              </div>
+              </div> */}
 
-              <p className="text-base font-normal mb-4">
+              <p className="text-base font-normal mb-4 mt-4">
                 TradingQ&A, the most active trading and investment community in
                 India for all your market related queries.
               </p>
 
-              <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
+              <CTA title={"Trading Q&A"} />
+
+              {/* <div className="flex justify-start items-center gap-x-2 mb-4 text-primaryColor font-medium hover:text-black duration-75">
                 <a href="" className="text-base">
                   Trading Q&A
                 </a>
                 <FontAwesomeIcon icon={faArrowRight} size="xs" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
