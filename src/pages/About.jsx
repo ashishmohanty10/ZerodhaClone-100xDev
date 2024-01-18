@@ -58,6 +58,12 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          <div className="py-16">
+            <h3 className="text-3xl font-medium dark:text-slate-100 text-center">
+              People
+            </h3>
+          </div>
         </div>
       </div>
     </div>
