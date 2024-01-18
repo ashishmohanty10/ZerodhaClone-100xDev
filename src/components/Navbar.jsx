@@ -42,7 +42,10 @@ const Navbar = () => {
                 </li>
               ))}
 
-              <li className="list-none" onClick={handleMenu}>
+              <li
+                className={darkTheme ? "list-none text-slate-50" : "list-none"}
+                onClick={handleMenu}
+              >
                 <FontAwesomeIcon icon={menu ? faXmark : faBars} />
               </li>
 
