@@ -15,7 +15,15 @@ const SignUp = () => {
             </div>
 
             <div>
-              <h3 className="text-3xl font-medium mb-5">Signup now</h3>
+              <h3
+                className={
+                  darkTheme
+                    ? "text-3xl font-medium mb-5 text-slate-100"
+                    : "text-3xl font-medium mb-5"
+                }
+              >
+                Signup now
+              </h3>
               <p className="text-slate-400 text-base mb-5">
                 Or track your existing application.
               </p>
@@ -40,12 +48,18 @@ const SignUp = () => {
                     autofocus="autofocus"
                     className={
                       darkTheme
-                        ? "bg-slate-800 border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
+                        ? "bg-slate-800 border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400 text-slate-300"
                         : "border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
                     }
                   />
 
-                  <span className="absolute top-3 left-3 text-sm font-normal">
+                  <span
+                    className={
+                      darkTheme
+                        ? "absolute top-3 left-3 text-sm font-normal text-slate-300"
+                        : "absolute top-3 left-3 text-sm font-normal"
+                    }
+                  >
                     +91
                   </span>
                 </div>
