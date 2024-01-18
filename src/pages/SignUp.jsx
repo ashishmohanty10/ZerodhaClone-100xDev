@@ -7,7 +7,7 @@ const SignUp = () => {
   const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div>
+      <div className="dark:bg-slate-800">
         <div className="container">
           <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
             <div>
@@ -22,7 +22,13 @@ const SignUp = () => {
 
               <form action="">
                 <div className="flex flex-col justify-start relative mb-5">
-                  <label className="text-sm font-normal text-slate-500 absolute bg-white -top-3 left-3 px-2">
+                  <label
+                    className={
+                      darkTheme
+                        ? "bg-slate-800 text-sm font-normal text-slate-500 absolute -top-3 left-3 px-2"
+                        : "text-sm font-normal text-slate-500 absolute bg-white -top-3 left-3 px-2"
+                    }
+                  >
                     Mobile Number
                   </label>
                   <input
@@ -32,7 +38,11 @@ const SignUp = () => {
                     autocapitalize="none"
                     maxlength="10"
                     autofocus="autofocus"
-                    className="border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
+                    className={
+                      darkTheme
+                        ? "bg-slate-800 border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
+                        : "border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
+                    }
                   />
 
                   <span className="absolute top-3 left-3 text-sm font-normal">
