@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="w-[20vh]">
-              <Link to="/home">
+              <Link to={`/`}>
                 <img src={Logo} alt="" className="cursor-pointer" />
               </Link>
             </div>

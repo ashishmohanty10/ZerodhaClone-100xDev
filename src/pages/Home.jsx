@@ -25,7 +25,7 @@ export const Home = () => {
               and more
             </p>
 
-            <Button name={"SignUp"} />
+            <Button name={"Sign Up Now"} />
           </div>
 
           {/* Second section */}
@@ -199,6 +199,20 @@ export const Home = () => {
                 <FontAwesomeIcon icon={faArrowRight} size="xs" />
               </div> */}
             </div>
+          </div>
+
+          {/* Sicth Section */}
+
+          <div className="flex justify-center items-center flex-col py-16">
+            <h1 className="text-4xl font-medium mb-4">
+              Open a Zerodha account
+            </h1>
+            <p className="text-xl font-normal mb-5">
+              Modern platforms and apps, ₹0 investments, and flat ₹20 intraday
+              and F&O trades.
+            </p>
+
+            <Button name={"Sign Up Now"} />
           </div>
         </div>
       </div>
