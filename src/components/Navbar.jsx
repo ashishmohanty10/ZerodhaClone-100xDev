@@ -25,16 +25,18 @@ const Navbar = () => {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="w-[20vh]">
-              <img src={Logo} alt="" />
+              <Link to="/home">
+                <img src={Logo} alt="" className="cursor-pointer" />
+              </Link>
             </div>
 
             <ul className="flex justify-between items-center space-x-5 ">
-              {NavLinks.map(({ id, name }) => (
+              {NavLinks.map(({ href, name }) => (
                 <li
-                  key={id}
+                  key={href}
                   className="list-none hover:text-primaryColor duration-75 dark:text-slate-50 dark:hover:text-primaryColor"
                 >
-                  <Link to={id} target="_self">
+                  <Link to={href} target="_self">
                     {name}
                   </Link>
                 </li>
