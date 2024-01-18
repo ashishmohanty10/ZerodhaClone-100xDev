@@ -20,7 +20,7 @@ const Navbar = () => {
   const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
 
   return (
-    <div className={darkTheme ? "dark sticky top-0" : "sticky top-0"}>
+    <div className={darkTheme ? "dark sticky top-0 z-50" : "sticky top-0 z-50"}>
       <div className="py-5 border-b-2 border-slate-200 sticky top-0 bg-white dark:bg-slate-800 dark:border-primaryColor">
         <div className="container">
           <div className="flex justify-between items-center">
