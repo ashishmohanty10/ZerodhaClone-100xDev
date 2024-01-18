@@ -1,26 +1,26 @@
 export const NavLinks = [
   {
-    href: "#",
+    id: 1,
     name: "Signup",
   },
 
   {
-    href: "#",
+    id: 2,
     name: "About",
   },
 
   {
-    href: "#",
+    id: 3,
     name: "Product",
   },
 
   {
-    href: "#",
+    id: 4,
     name: "Pricing",
   },
 
   {
-    href: "#",
+    id: 5,
     name: "Support",
   },
 ];
