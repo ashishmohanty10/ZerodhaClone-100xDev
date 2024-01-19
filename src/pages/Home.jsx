@@ -31,8 +31,8 @@ export const Home = () => {
           </div>
 
           {/* Second section */}
-          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div className="flex justify-center items-center">
+          <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div className="mb-4 flex justify-center items-center">
               <img src={Img2} alt="" />
             </div>
 
@@ -46,16 +46,16 @@ export const Home = () => {
                 order volumes in India daily by trading and investing in:
               </p>
 
-              <div className="flex justify-between items-center mb-4">
-                <div className="text-base font-normal dark:text-slate-300">
-                  <li>Futures and Options</li>
-                  <li>Commodity derivatives</li>
+              <div className="md:grid grid-cols-2  items-center mb-3 gap-x-5">
+                <div className="text-base font-normal dark:text-slate-300 mb-2">
+                  <li className="mb-2">Futures and Options</li>
+                  <li className="mb-2">Commodity derivatives</li>
                   <li>Currency derivatives</li>
                 </div>
 
                 <div className="text-base font-normal dark:text-slate-300">
-                  <li>Stocks & IPOs</li>
-                  <li>Direct mutual funds</li>
+                  <li className="mb-2">Stocks & IPOs</li>
+                  <li className="mb-2">Direct mutual funds</li>
                   <li>Bonds and Govt. Securities</li>
                 </div>
               </div>
@@ -66,8 +66,8 @@ export const Home = () => {
             </div>
           </div>
           {/* Third Section */}
-          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div>
+          <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div className="mb-4 md:mb-0">
               <h3 className="text-3xl font-medium mb-5 dark:text-slate-100">
                 Trust with confidence
               </h3>
@@ -117,7 +117,7 @@ export const Home = () => {
             </div>
 
             <div className="flex justify-center items-center flex-col">
-              <img src={Ecosystem} alt="" />
+              <img src={Ecosystem} alt="" className="mb-4" />
 
               <div className="flex justify-center items-center gap-10">
                 <CTA title={"Explore Our Products"} />
@@ -138,9 +138,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
           {/* Forth Section */}
-          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div>
+          <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div className="mb-4 md:sm-0">
               <h3 className="text-3xl font-medium mb-5 dark:text-slate-100">
                 Unbeatable pricing
               </h3>
@@ -178,8 +179,8 @@ export const Home = () => {
           </div>
 
           {/* Fifth Section */}
-          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div>
+          <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div className="mb-4 md:mb-0">
               <img src={Education} alt="" />
             </div>
 
@@ -223,7 +224,7 @@ export const Home = () => {
             <h1 className="text-4xl font-medium mb-4 dark:text-slate-100">
               Open a Zerodha account
             </h1>
-            <p className="text-xl font-normal mb-5 dark:text-slate-300">
+            <p className="text-xl font-normal mb-5 dark:text-slate-300 text-center md:text-left">
               Modern platforms and apps, ₹0 investments, and flat ₹20 intraday
               and F&O trades.
             </p>

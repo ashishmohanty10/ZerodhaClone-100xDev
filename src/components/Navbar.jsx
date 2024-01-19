@@ -30,7 +30,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <ul className="flex justify-between items-center space-x-5 ">
+            <ul className="hidden lg:flex justify-between items-center lg:space-x-5 ">
               {NavLinks.map(({ href, name }) => (
                 <li
                   key={href}

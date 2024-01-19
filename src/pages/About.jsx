@@ -8,14 +8,14 @@ const About = () => {
       <div className="dark:bg-slate-800">
         <div className="container">
           <div className="flex justify-center items-center py-16 border-b border-slate-400 dark:border-primaryColor">
-            <h3 className="text-3xl font-medium dark:text-slate-100 text-center w-[60%]">
+            <h3 className="text-4xl font-medium dark:text-slate-100 text-center w-[70%]">
               We pioneered the discount broking model in India. Now, we are
               breaking ground with our technology.
             </h3>
           </div>
 
-          <div className="py-16">
-            <div className="grid grid-cols-2 justify-center items-start">
+          <div className="py-16 ">
+            <div className="md:grid md:grid-cols-2 justify-center items-start md:px-14 gap-x-10 text-justify">
               <div>
                 <p className="text-base dark:text-slate-300 font-normal mb-3">
                   We kick-started operations on the 15th of August, 2010 with
