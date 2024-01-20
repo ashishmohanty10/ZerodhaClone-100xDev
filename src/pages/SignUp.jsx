@@ -9,8 +9,8 @@ const SignUp = () => {
     <div className={darkTheme ? "dark" : ""}>
       <div className="dark:bg-slate-800">
         <div className="container">
-          <div className="grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div>
+          <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
+            <div className="mb-5 md:mb-0">
               <img src={SignupImg} alt="" />
             </div>
 
@@ -48,8 +48,8 @@ const SignUp = () => {
                     autofocus="autofocus"
                     className={
                       darkTheme
-                        ? "bg-slate-800 border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400 text-slate-300"
-                        : "border border-slate-300 rounded-sm max-w-[300px] h-12 pl-16 outline-slate-400"
+                        ? "bg-slate-800 border border-slate-300 rounded-sm w-full md:max-w-[300px] h-12 pl-16 outline-slate-400 text-slate-300"
+                        : "border border-slate-300 rounded-sm w-full md:max-w-[300px] h-12 pl-16 outline-slate-400"
                     }
                   />
 
