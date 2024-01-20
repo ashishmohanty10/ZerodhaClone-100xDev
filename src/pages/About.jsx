@@ -1,8 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
-
+import CEO from "../assets/nithin-kamath.jpg";
+// import CFO from "../assets/Nikhil.jpg";
+import { SubAbout } from "../components/SubAbout";
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  // const [subAbout, setSubAbout] = useState([]);
+  // useEffect(() => {
+  //   Axios.get("SubAbout.json")
+  //     .then((res) => setSubAbout(res.data))
+  //     .catch((err) => console.log(err));
+  // }, []);
+
   return (
     <div className={darkTheme ? "dark" : ""}>
       <div className="dark:bg-slate-800">
@@ -14,6 +23,7 @@ const About = () => {
             </h3>
           </div>
 
+          {/* second section */}
           <div className="py-16 ">
             <div className="md:grid md:grid-cols-2 justify-center items-start md:px-14 gap-x-10 text-justify">
               <div>
@@ -59,10 +69,73 @@ const About = () => {
             </div>
           </div>
 
+          {/* Third section */}
           <div className="py-16">
-            <h3 className="text-3xl font-medium dark:text-slate-100 text-center">
+            <h3 className="text-3xl font-medium dark:text-slate-100 text-center mb-5">
               People
             </h3>
+
+            <div className="md:grid grid-cols-2 justify-center items-center gap-x-5">
+              <div className="flex flex-col justify-center items-center mb-4 md:mb-0">
+                <img
+                  src={CEO}
+                  alt=""
+                  className="rounded-full md:max-h-[300px] mb-4"
+                />
+                <p className="text-lg font-normal mb-4">Nithin Kamath</p>
+                <p className="text-sm text-slate-400">Founder, CEO</p>
+              </div>
+
+              <div className="text-base font-normal">
+                <p className="mb-4">
+                  Nithin bootstrapped and founded Zerodha in 2010 to overcome
+                  the hurdles he faced during his decade long stint as a trader.
+                  Today, Zerodha has changed the landscape of the Indian broking
+                  industry.
+                </p>
+
+                <p className="mb-4">
+                  He is a member of the SEBI Secondary Market Advisory Committee
+                  (SMAC) and the Market Data Advisory Committee (MDAC).
+                </p>
+
+                <p className="mb-4">Playing basketball is his zen.</p>
+
+                <p className="text-base font-normal">
+                  Connect on
+                  <a href="" className="text-primaryColor font-medium px-1">
+                    Homepage
+                  </a>{" "}
+                  /{" "}
+                  <a href="" className="text-primaryColor font-medium">
+                    TradingQnA
+                  </a>{" "}
+                  /{" "}
+                  <a href="" className="text-primaryColor font-medium ">
+                    Twitter
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth section */}
+
+          <div className="py-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center">
+              <div>
+                {SubAbout.map(({ id, imgUrl, name, position }) => {
+                  <div key={id}>
+                    <div>
+                      <img src={imgUrl} alt="" />
+                    </div>
+
+                    <p>{name}</p>
+                    <p>{position}</p>
+                  </div>;
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
