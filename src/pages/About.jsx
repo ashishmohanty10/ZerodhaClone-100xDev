@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import CEO from "../assets/nithin-kamath.jpg";
 import { SubAbout } from "../components/SubAbout";
@@ -7,7 +7,17 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const [dropDownStates, setDropDownStates] = useState(
+    SubAbout.map(() => false)
+  );
 
+  const handleDropDown = (index) => {
+    setDropDownStates((prevStates) => {
+      const newStates = [...prevStates];
+      newStates[index] = !newStates[index];
+      return newStates;
+    });
+  };
   return (
     <div className={darkTheme ? "dark" : ""}>
       <div className="dark:bg-slate-800">
@@ -119,23 +129,37 @@ const About = () => {
 
           <div className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-10">
-              {SubAbout.map(({ id, imgUrl, name, position }) => (
-                <div
-                  key={id}
-                  className="flex flex-col justify-center items-center"
-                >
-                  <div className="mb-4 max-w-[250px]  object-center">
-                    <img src={imgUrl} alt="" className="rounded-full" />
-                  </div>
-                  <p className="text-lg font-normal mb-2">{name}</p>
-                  <p className="text-base font-normal mb-2">{position}</p>
+              {SubAbout.map(
+                ({ id, imgUrl, name, position, bio: { para } }, index) => (
+                  <div
+                    key={id}
+                    className="flex flex-col justify-center items-center"
+                  >
+                    <div className="mb-4 max-w-[250px]  object-center">
+                      <img src={imgUrl} alt="" className="rounded-full" />
+                    </div>
+                    <p className="text-lg font-normal mb-2">{name}</p>
+                    <p className="text-base font-normal mb-2">{position}</p>
 
-                  <div className="flex justify-center items-center gap-2">
-                    <p className="text-base font-normal text-slate-400">Bio</p>
-                    <FontAwesomeIcon icon={faAngleDown} size="xs" />
+                    <div className="flex flex-col justify-center items-start gap-2">
+                      <p className="text-base font-normal text-slate-400">
+                        Bio
+                        <FontAwesomeIcon
+                          icon={faAngleDown}
+                          size="xs"
+                          onClick={() => handleDropDown(index)}
+                        />
+                      </p>
+
+                      {dropDownStates[index] && (
+                        <div>
+                          <p>{para}</p>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
         </div>
