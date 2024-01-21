@@ -122,19 +122,16 @@ const About = () => {
           {/* Fourth section */}
 
           <div className="py-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center">
-              <div>
-                {SubAbout.map(({ id, imgUrl, name, position }) => {
-                  <div key={id}>
-                    <div>
-                      <img src={imgUrl} alt="" />
-                    </div>
-
-                    <p>{name}</p>
-                    <p>{position}</p>
-                  </div>;
-                })}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-5">
+              {SubAbout.map(({ id, imgUrl, name, position }) => (
+                <div key={id}>
+                  <div>
+                    <img src={imgUrl} alt="" />
+                  </div>
+                  <p>{name}</p>
+                  <p>{position}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
