@@ -122,14 +122,17 @@ const About = () => {
           {/* Fourth section */}
 
           <div className="py-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-10">
               {SubAbout.map(({ id, imgUrl, name, position }) => (
-                <div key={id}>
-                  <div>
-                    <img src={imgUrl} alt="" />
+                <div
+                  key={id}
+                  className="flex flex-col justify-center items-center"
+                >
+                  <div className="mb-4 max-w-[300px]  object-center">
+                    <img src={imgUrl} alt="" className="rounded-full" />
                   </div>
-                  <p>{name}</p>
-                  <p>{position}</p>
+                  <p className="text-lg font-normal mb-2">{name}</p>
+                  <p className="text-base font-normal mb-2">{position}</p>
                 </div>
               ))}
             </div>

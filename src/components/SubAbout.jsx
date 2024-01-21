@@ -10,49 +10,49 @@ export const SubAbout = [
   {
     id: 1,
     imgUrl: CFO,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Nikhil Kamath",
+    position: "Co-founder & CFO",
   },
 
   {
-    id: 1,
+    id: 2,
     imgUrl: CTO,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Dr. Kailash Nadh",
+    position: "CTO",
   },
 
   {
-    id: 1,
+    id: 3,
     imgUrl: COO,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Venu Madhav",
+    position: "COO",
   },
 
   {
-    id: 1,
+    id: 4,
     imgUrl: CCO,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Hanan Delvi",
+    position: "CCO",
   },
 
   {
-    id: 1,
+    id: 5,
     imgUrl: Director,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Seema Patil",
+    position: "Director",
   },
 
   {
-    id: 1,
+    id: 6,
     imgUrl: ChiefOfEducation,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Karthik Rangappa",
+    position: "Chief of Education",
   },
 
   {
     id: 1,
     imgUrl: DirectorStrategy,
-    name: "Nikhil",
-    position: "CFO",
+    name: "Austin Prakesh",
+    position: "Director Strategy",
   },
 ];
