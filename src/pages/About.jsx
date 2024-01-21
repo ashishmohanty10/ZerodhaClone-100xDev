@@ -130,9 +130,9 @@ const About = () => {
                   <p className="text-lg font-normal mb-2">{name}</p>
                   <p className="text-base font-normal mb-2">{position}</p>
 
-                  <div className="flex justify-center items-center ">
+                  <div className="flex justify-center items-center gap-2">
                     <p className="text-base font-normal text-slate-400">Bio</p>
-                    <FontAwesomeIcon icon={faAngleDown} size="sm" />
+                    <FontAwesomeIcon icon={faAngleDown} size="xs" />
                   </div>
                 </div>
               ))}
