@@ -1,16 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import CEO from "../assets/nithin-kamath.jpg";
-// import CFO from "../assets/Nikhil.jpg";
 import { SubAbout } from "../components/SubAbout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
-  // const [subAbout, setSubAbout] = useState([]);
-  // useEffect(() => {
-  //   Axios.get("SubAbout.json")
-  //     .then((res) => setSubAbout(res.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
 
   return (
     <div className={darkTheme ? "dark" : ""}>
@@ -128,11 +124,16 @@ const About = () => {
                   key={id}
                   className="flex flex-col justify-center items-center"
                 >
-                  <div className="mb-4 max-w-[300px]  object-center">
+                  <div className="mb-4 max-w-[250px]  object-center">
                     <img src={imgUrl} alt="" className="rounded-full" />
                   </div>
                   <p className="text-lg font-normal mb-2">{name}</p>
                   <p className="text-base font-normal mb-2">{position}</p>
+
+                  <div className="flex justify-center items-center ">
+                    <p className="text-base font-normal text-slate-400">Bio</p>
+                    <FontAwesomeIcon icon={faAngleDown} size="sm" />
+                  </div>
                 </div>
               ))}
             </div>
