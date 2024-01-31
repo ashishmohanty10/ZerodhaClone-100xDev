@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import SignUp from "./pages/SignUp";
 import About from "./pages/About";
-import Products from "./pages/Product";
+import Product from "./pages/Product";
 import Support from "./pages/Support";
 import Footer from "./components/Footer";
 import ThemeProvider from "./context/ThemeProvider";
@@ -20,9 +20,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/support" element={<Support />} />
+            <Route path="/product" element={<Product />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/support" element={<Support />} />
           </Routes>
           <Footer />
         </ThemeProvider>
