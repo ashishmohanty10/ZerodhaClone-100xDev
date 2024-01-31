@@ -8,6 +8,7 @@ import Products from "./pages/Product";
 import Support from "./pages/Support";
 import Footer from "./components/Footer";
 import ThemeProvider from "./context/ThemeProvider";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
           <Footer />
         </ThemeProvider>

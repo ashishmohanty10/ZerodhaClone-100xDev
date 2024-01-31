@@ -7,22 +7,17 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
-  const [dropDownStates, setDropDownStates] = useState(
-    SubAbout.map(() => false)
-  );
+  const [dropDownStates, setDropDownStates] = useState(false);
 
-  const handleDropDown = (index) => {
-    setDropDownStates((prevStates) => {
-      const newStates = [...prevStates];
-      newStates[index] = !newStates[index];
-      return newStates;
-    });
+  const handleDropDown = () => {
+    setDropDownStates(!dropDownStates);
   };
+
   return (
     <div className={darkTheme ? "dark" : ""}>
       <div className="dark:bg-slate-800">
         <div className="container">
-          <div className="flex justify-center items-center py-16 border-b border-slate-400 dark:border-primaryColor">
+          <div className="flex items-center justify-center py-16 border-b border-slate-400 dark:border-primaryColor">
             <h3 className="text-4xl font-medium dark:text-slate-100 text-center w-[70%]">
               We pioneered the discount broking model in India. Now, we are
               breaking ground with our technology.
@@ -31,9 +26,9 @@ const About = () => {
 
           {/* second section */}
           <div className="py-16 ">
-            <div className="md:grid md:grid-cols-2 justify-center items-start md:px-14 gap-x-10 text-justify">
+            <div className="items-start justify-center text-justify md:grid md:grid-cols-2 md:px-14 gap-x-10">
               <div>
-                <p className="text-base dark:text-slate-300 font-normal mb-3">
+                <p className="mb-3 text-base font-normal dark:text-slate-300">
                   We kick-started operations on the 15th of August, 2010 with
                   the goal of breaking all barriers that traders and investors
                   face in India in terms of cost, support, and technology. We
@@ -41,12 +36,12 @@ const About = () => {
                   the Sanskrit word for barrier.
                 </p>
 
-                <p className="text-base dark:text-slate-300 font-normal mb-3">
+                <p className="mb-3 text-base font-normal dark:text-slate-300">
                   Today, our disruptive pricing models and in-house technology
                   have made us the biggest stock broker in India.
                 </p>
 
-                <p className="text-base dark:text-slate-300 font-normal ">
+                <p className="text-base font-normal dark:text-slate-300 ">
                   Over 1+ Crore clients place millions of orders every day
                   through our powerful ecosystem of investment platforms,
                   contributing over 15% of all Indian retail trading volumes.
@@ -54,19 +49,19 @@ const About = () => {
               </div>
 
               <div>
-                <p className="text-base dark:text-slate-300 font-normal mb-3">
+                <p className="mb-3 text-base font-normal dark:text-slate-300">
                   In addition, we run a number of popular open online
                   educational and community initiatives to empower retail
                   traders and investors.
                 </p>
 
-                <p className="text-base dark:text-slate-300 font-normal mb-3">
+                <p className="mb-3 text-base font-normal dark:text-slate-300">
                   Rainmatter, our fintech fund and incubator, has invested in
                   several fintech startups with the goal of growing the Indian
                   capital markets.
                 </p>
 
-                <p className="text-base dark:text-slate-300 font-normal ">
+                <p className="text-base font-normal dark:text-slate-300 ">
                   And yet, we are always up to something new every day. Catch up
                   on the latest updates on our blog or see what the media is
                   saying about us.
@@ -77,18 +72,18 @@ const About = () => {
 
           {/* Third section */}
           <div className="py-16">
-            <h3 className="text-3xl font-medium dark:text-slate-100 text-center mb-5">
+            <h3 className="mb-5 text-3xl font-medium text-center dark:text-slate-100">
               People
             </h3>
 
-            <div className="md:grid grid-cols-2 justify-center items-center gap-x-5">
-              <div className="flex flex-col justify-center items-center mb-4 md:mb-0">
+            <div className="items-center justify-center grid-cols-2 md:grid gap-x-5">
+              <div className="flex flex-col items-center justify-center mb-4 md:mb-0">
                 <img
                   src={CEO}
                   alt=""
                   className="rounded-full md:max-h-[300px] mb-4"
                 />
-                <p className="text-lg font-normal mb-4">Nithin Kamath</p>
+                <p className="mb-4 text-lg font-normal">Nithin Kamath</p>
                 <p className="text-sm text-slate-400">Founder, CEO</p>
               </div>
 
@@ -109,15 +104,15 @@ const About = () => {
 
                 <p className="text-base font-normal">
                   Connect on
-                  <a href="" className="text-primaryColor font-medium px-1">
+                  <a href="" className="px-1 font-medium text-primaryColor">
                     Homepage
                   </a>{" "}
                   /{" "}
-                  <a href="" className="text-primaryColor font-medium">
+                  <a href="" className="font-medium text-primaryColor">
                     TradingQnA
                   </a>{" "}
                   /{" "}
-                  <a href="" className="text-primaryColor font-medium ">
+                  <a href="" className="font-medium text-primaryColor ">
                     Twitter
                   </a>
                 </p>
@@ -128,38 +123,43 @@ const About = () => {
           {/* Fourth section */}
 
           <div className="py-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-10">
-              {SubAbout.map(
-                ({ id, imgUrl, name, position, bio: { para } }, index) => (
-                  <div
-                    key={id}
-                    className="flex flex-col justify-center items-center"
-                  >
-                    <div className="mb-4 max-w-[250px]  object-center">
-                      <img src={imgUrl} alt="" className="rounded-full" />
-                    </div>
-                    <p className="text-lg font-normal mb-2">{name}</p>
-                    <p className="text-base font-normal mb-2">{position}</p>
+            <div className="grid items-center justify-between grid-cols-1 gap-10 md:grid-cols-3">
+              {SubAbout.map((d, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-center justify-center"
+                >
+                  <div className="mb-4 max-w-[250px]  object-center">
+                    <img src={d.imgUrl} alt="" className="rounded-full" />
+                  </div>
+                  <p className="mb-2 text-lg font-normal">{d.name}</p>
+                  <p className="mb-2 text-base font-normal">{d.position}</p>
 
-                    <div className="flex flex-col justify-center items-start gap-2">
+                  <div className="flex flex-col items-start justify-center gap-2">
+                    <div
+                      className="flex items-center justify-center gap-2 font-medium"
+                      onClick={handleDropDown}
+                    >
                       <p className="text-base font-normal text-slate-400">
-                        Bio
-                        <FontAwesomeIcon
-                          icon={faAngleDown}
-                          size="xs"
-                          onClick={() => handleDropDown(index)}
-                        />
+                        BIO
                       </p>
-
-                      {dropDownStates[index] && (
-                        <div>
-                          <p>{para}</p>
-                        </div>
-                      )}
+                      <FontAwesomeIcon
+                        icon={faAngleDown}
+                        size="xs"
+                        onClick={handleDropDown}
+                      />
                     </div>
                   </div>
-                )
-              )}
+
+                  <div>
+                    {dropDownStates && (
+                      <div className="flex items-start justify-center h-[150px]">
+                        <p>{d.bio.para}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
