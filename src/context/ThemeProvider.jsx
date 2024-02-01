@@ -9,6 +9,7 @@ const ThemeProvider = ({ children }) => {
     setDarkTheme(!darkTheme);
   };
   console.log(darkTheme);
+
   return (
     <ThemeContext.Provider value={{ darkTheme, toggleDarkMode }}>
       {children}

@@ -4,6 +4,8 @@ import CEO from "../assets/nithin-kamath.jpg";
 import { SubAbout } from "../components/SubAbout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import TeamMember from "../components/TeamMember";
+// import TeamMember from "../components/TeamMember";
 
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
@@ -124,41 +126,8 @@ const About = () => {
 
           <div className="py-16">
             <div className="grid items-center justify-between grid-cols-1 gap-10 md:grid-cols-3">
-              {SubAbout.map((d, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <div className="mb-4 max-w-[250px]  object-center">
-                    <img src={d.imgUrl} alt="" className="rounded-full" />
-                  </div>
-                  <p className="mb-2 text-lg font-normal">{d.name}</p>
-                  <p className="mb-2 text-base font-normal">{d.position}</p>
-
-                  <div className="flex flex-col items-start justify-center gap-2">
-                    <div
-                      className="flex items-center justify-center gap-2 font-medium"
-                      onClick={handleDropDown}
-                    >
-                      <p className="text-base font-normal text-slate-400">
-                        BIO
-                      </p>
-                      <FontAwesomeIcon
-                        icon={faAngleDown}
-                        size="xs"
-                        onClick={handleDropDown}
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    {dropDownStates && (
-                      <div className="flex items-start justify-center h-[150px]">
-                        <p>{d.bio.para}</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
+              {SubAbout.map((data) => (
+                <TeamMember data={data} />
               ))}
             </div>
           </div>
