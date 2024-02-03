@@ -2,10 +2,7 @@ import React, { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import CEO from "../assets/nithin-kamath.jpg";
 import { SubAbout } from "../components/SubAbout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import TeamMember from "../components/TeamMember";
-// import TeamMember from "../components/TeamMember";
 
 const About = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
