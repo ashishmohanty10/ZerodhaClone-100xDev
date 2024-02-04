@@ -8,6 +8,7 @@ import Console from "../assets/products-console.png";
 import Coin from "../assets/products-coin.png";
 import KiteConnect from "../assets/products-kiteconnect.png";
 import Varsity from "../assets/varsity-products.png";
+import CTA from "../components/CTA";
 
 const Product = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
@@ -50,8 +51,8 @@ const Product = () => {
                 </p>
 
                 <div className="flex items-center justify-start gap-5 mb-4 text-base font-medium text-primaryColor">
-                  <a href="">Try demo →</a>
-                  <a href="">Learn More →</a>
+                  <CTA title={"Try demo"} />
+                  <CTA title={"Learn More"} />
                 </div>
 
                 <div className="flex items-center justify-start mb-4">
@@ -75,7 +76,7 @@ const Product = () => {
                 </p>
 
                 <div className="flex items-center justify-start gap-5 mb-4 text-base font-medium text-primaryColor">
-                  <a href="">Learn More →</a>
+                  <CTA title={"Learn More"} />
                 </div>
               </div>
 
@@ -147,12 +148,12 @@ const Product = () => {
               </div>
 
               <div>
-                <h3 className="mb-5 text-3xl font-semibold">Coin</h3>
+                <h3 className="mb-5 text-3xl font-semibold">Varsity mobile</h3>
 
                 <p className="mb-4 text-base">
-                  Buy direct mutual funds online, commission-free, delivered
-                  directly to your Demat account. Enjoy the investment
-                  experience on your Android and iOS devices.
+                  An easy to grasp, collection of stock market lessons with
+                  in-depth coverage and illustrations. Content is broken down
+                  into bite-size cards to help you learn on the go.
                 </p>
 
                 <div className="flex items-center justify-start mb-4">
@@ -161,6 +162,34 @@ const Product = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* sevent section */}
+
+          <div className="flex justify-center items-center py-10 text-lg">
+            <p>
+              Want to know more about our technology stack? Check out the{" "}
+              <a href="" className="text-primaryColor">
+                Zerodha.tech
+              </a>{" "}
+              blog.
+            </p>
+          </div>
+
+          {/* Company section */}
+
+          <div className="py-10">
+            <div>
+              <h3 className="text-3xl font-medium mb-5 text-center">
+                The Zerodha Universe
+              </h3>
+              <p className="text-base text-center mb-4">
+                Extend your trading and investment experience even further with
+                our partner platforms
+              </p>
+            </div>
+
+            <div></div>
           </div>
         </div>
       </div>

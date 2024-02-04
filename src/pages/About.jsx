@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import CEO from "../assets/nithin-kamath.jpg";
-import { SubAbout } from "../components/SubAbout";
+import { AboutData as AboutDataList } from "../components/AboutDataList";
 import TeamMember from "../components/TeamMember";
 
 const About = () => {
@@ -123,7 +123,7 @@ const About = () => {
 
           <div className="py-16">
             <div className="grid items-center justify-between grid-cols-1 gap-10 md:grid-cols-3">
-              {SubAbout.map((data) => (
+              {AboutDataList.map((data) => (
                 <TeamMember data={data} />
               ))}
             </div>

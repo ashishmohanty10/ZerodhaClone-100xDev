@@ -6,7 +6,7 @@ import Director from "../assets/Seema.jpg";
 import ChiefOfEducation from "../assets/karthik.jpg";
 import DirectorStrategy from "../assets/Austin.jpg";
 
-export const SubAbout = [
+export const AboutData = [
   {
     id: 1,
     imgUrl: CFO,
