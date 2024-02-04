@@ -8,6 +8,7 @@ import Console from "../assets/products-console.png";
 import Coin from "../assets/products-coin.png";
 import KiteConnect from "../assets/products-kiteconnect.png";
 import Varsity from "../assets/varsity-products.png";
+import CompanySection from "../components/CompanySection";
 import CTA from "../components/CTA";
 
 const Product = () => {
@@ -34,9 +35,9 @@ const Product = () => {
             </p>
           </div>
 
-          {/* second section */}
+          {/* Kite */}
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-2">
+            <div className="md:grid items-center justify-between grid-cols-2 gap-5">
               <div className="flex items-center justify-center">
                 <img src={Product1} alt="" />
               </div>
@@ -63,10 +64,10 @@ const Product = () => {
             </div>
           </div>
 
-          {/* third section */}
+          {/* Console */}
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-2">
-              <div>
+            <div className="md:grid items-center justify-between grid-cols-2 gap-5">
+              <div className="order-1 md:order-2">
                 <h3 className="mb-5 text-3xl font-semibold">Console</h3>
 
                 <p className="mb-4 text-base">
@@ -80,16 +81,15 @@ const Product = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center order-2 md:order-1">
                 <img src={Console} alt="" />
               </div>
             </div>
           </div>
 
-          {/* fouth section */}
-
+          {/* Coin */}
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-2">
+            <div className="md:grid items-center justify-between grid-cols-2 gap-5">
               <div className="flex items-center justify-center">
                 <img src={Coin} alt="" />
               </div>
@@ -104,7 +104,7 @@ const Product = () => {
                 </p>
 
                 <div className="flex items-center justify-start gap-5 mb-4 text-base font-medium text-primaryColor">
-                  <a href="">Coin →</a>
+                  <CTA title={"Coin"} />
                 </div>
 
                 <div className="flex items-center justify-start mb-4">
@@ -115,9 +115,9 @@ const Product = () => {
             </div>
           </div>
 
-          {/* Fifth section */}
+          {/* Kite Connect API */}
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-2">
+            <div className="md:grid items-center justify-between grid-cols-2 gap-5">
               <div>
                 <h3 className="mb-5 text-3xl font-semibold">
                   Kite Connect API
@@ -130,7 +130,7 @@ const Product = () => {
                 </p>
 
                 <div className="flex items-center justify-start gap-5 mb-4 text-base font-medium text-primaryColor">
-                  <a href="">Kite Connect →</a>
+                  <CTA title={"Kite Connect"} />
                 </div>
               </div>
 
@@ -140,9 +140,9 @@ const Product = () => {
             </div>
           </div>
 
-          {/* Sixth section */}
+          {/* Varsity mobile */}
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-2">
+            <div className="md:grid items-center justify-between grid-cols-2 gap-5">
               <div className="flex items-center justify-center">
                 <img src={Varsity} alt="" />
               </div>
@@ -164,7 +164,7 @@ const Product = () => {
             </div>
           </div>
 
-          {/* sevent section */}
+          {/* COMPANY */}
 
           <div className="flex justify-center items-center py-10 text-lg">
             <p>
@@ -179,7 +179,7 @@ const Product = () => {
           {/* Company section */}
 
           <div className="py-10">
-            <div>
+            <div className="mb-4">
               <h3 className="text-3xl font-medium mb-5 text-center">
                 The Zerodha Universe
               </h3>
@@ -189,7 +189,9 @@ const Product = () => {
               </p>
             </div>
 
-            <div></div>
+            <div>
+              <CompanySection />
+            </div>
           </div>
         </div>
       </div>
