@@ -20,13 +20,13 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between items-center mt-5 gap-10">
+            <div className="grid md:grid-cols-2 justify-between items-center mt-5 gap-10">
               <div className="flex flex-col justify-start gap-y-5">
                 <h3 className="text-slate-100 font-medium text-xl">
                   Search for an answer or browse help topics to create a ticket
                 </h3>
 
-                <div className="flex justify-center items-center py-4 px-4 bg-slate-100 w-[80%] rounded-sm">
+                <div className="flex justify-center items-center py-4 px-4 bg-slate-100 rounded-sm gap-5 w-full">
                   <input
                     type="text"
                     placeholder="Eg: how do i activate F&O, why is my order getting rejected ..."
@@ -36,7 +36,7 @@ const Support = () => {
                   <IoIosSearch className="text-2xl font-medium" />
                 </div>
 
-                <ul className="flex justify-between items-center flex-wrap">
+                <ul className="flex flex-col md:flex-row justify-start md:gap-x-5 flex-wrap">
                   <a
                     href=""
                     className="font-normal text-xl text-slate-100 underline mb-2 pb-1"
