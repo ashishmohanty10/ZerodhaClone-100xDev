@@ -4,6 +4,8 @@ import { ThemeContext } from "../context/ThemeProvider";
 import PricingImg1 from "../assets/other-trades.svg";
 import PricingImg2 from "../assets/pricing-eq.svg";
 import Button from "../components/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Pricing = () => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
@@ -74,7 +76,7 @@ const Pricing = () => {
             </div>
           </div>
 
-          {/* third section */}
+          {/* Third section */}
 
           <div className="flex flex-col justify-center py-16">
             <h3 className="text-4xl font-medium text-center dark:text-slate-100">
@@ -89,6 +91,97 @@ const Pricing = () => {
 
           <div className="flex justify-center">
             <Button name={"Sign Up Now"} />
+          </div>
+
+          <div className="flex justify-evenly items-center py-10">
+            <a
+              href=""
+              className="text-xl text-primaryColor hover:text-blue-700 duration-75 font-normal"
+            >
+              <h3>Brokerage calculator</h3>
+            </a>
+            <a
+              href=""
+              className="text-xl text-primaryColor hover:text-blue-700 duration-75 font-normal"
+            >
+              <h3>List of charges</h3>
+            </a>
+          </div>
+
+          <div className="py-10">
+            <ul className="text-xs flex flex-col justify-start gap-y-2">
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                Call & Trade and RMS auto-squareoff: Additional charges of ₹50 +
+                GST per order.
+              </li>
+
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                Digital contract notes will be sent via e-mail.
+              </li>
+
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                Physical copies of contract notes, if required, shall be charged
+                ₹20 per contract note. Courier charges apply.
+              </li>
+
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                For NRI account (non-PIS), 0.5% or ₹100 per executed order for
+                equity (whichever is lower).
+              </li>
+
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                For NRI account (PIS), 0.5% or ₹200 per executed order for
+                equity (whichever is lower).
+              </li>
+
+              <li className="flex justify-start items-center gap-2">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    size="xs"
+                    className="text-slate-600"
+                  />
+                </span>
+                If the account is in debit balance, any order placed will be
+                charged ₹40 per executed order instead of ₹20 per executed
+                order.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
