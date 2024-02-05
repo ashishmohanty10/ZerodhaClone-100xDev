@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import { IoIosSearch } from "react-icons/io";
+import SupportLinkList from "../components/SupportLinkList";
 
 const Support = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -86,6 +87,10 @@ const Support = () => {
             <h3 className="font-normal text-2xl text-slate-700">
               To create a ticket, select a relevant topic
             </h3>
+
+            <div>
+              <SupportLinkList />
+            </div>
           </div>
         </div>
       </div>
