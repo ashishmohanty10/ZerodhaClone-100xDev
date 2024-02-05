@@ -10,7 +10,7 @@ import { FaYoutube } from "react-icons/fa";
 import Logo from "../assets/logo.svg";
 
 const TopFooter = () => {
-  const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
       <div className="dark:bg-slate-800">
@@ -41,10 +41,10 @@ const TopFooter = () => {
                 <h3 className="text-lg font-medium text-slate-600">Company</h3>
 
                 <ul className="flex flex-col gap-y-2">
-                  <li className="text-base font-medium hover:text-primaryColor duration-75">
+                  <li className="text-base font-medium text-slate-600 hover:text-primaryColor duration-75">
                     <a href="">About</a>
                   </li>
-                  <li className="text-base font-medium hover:text-primaryColor duration-75">
+                  <li className="text-base font-medium text-slate-600 hover:text-primaryColor duration-75">
                     <a href="">Prducts</a>
                   </li>
                   <li className="text-base font-medium text-slate-600 hover:text-primaryColor duration-75">
