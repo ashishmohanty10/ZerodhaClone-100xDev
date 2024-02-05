@@ -9,6 +9,7 @@ import Support from "./pages/Support";
 import Footer from "./components/Footer";
 import ThemeProvider from "./context/ThemeProvider";
 import Pricing from "./pages/Pricing";
+import TopFooter from "./components/TopFooter";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/support" element={<Support />} />
           </Routes>
+          <TopFooter />
           <Footer />
         </ThemeProvider>
       </Router>
