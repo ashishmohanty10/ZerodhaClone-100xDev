@@ -160,18 +160,18 @@ export const Home = () => {
             </div>
 
             <div className="grid grid-cols-2 justify-center items-center">
-              <div className="flex flex-col justify-center items-center border border-slate-300 p-7 w-[192px]">
-                <p className="text-7xl font-semibold dark:text-slate-300">₹0</p>
-                <p className="text-center dark:text-slate-300">
+              <div className="border-2 border-slate-300 h-[200px]  p-5 flex flex-col justifystartr items-center border-r-0 rounded-md dark:text-slate-100     ">
+                <p className="text-4xl font-semibold mb-6">₹0</p>
+
+                <p className="text-center text-base font-normal">
                   Free equity delivery and direct mutual funds
                 </p>
               </div>
 
-              <div className="flex flex-col justify-center items-center border border-slate-300 p-7 w-[192px]">
-                <p className="text-7xl font-semibold dark:text-slate-300">
-                  ₹20
-                </p>
-                <p className="dark:text-slate-300 text-center">
+              <div className="border-2 border-slate-300 h-[200px] p-5 flex flex-col justify-start items-center rounded-md dark:text-slate-100">
+                <p className="text-4xl font-semibold mb-6">₹20</p>
+
+                <p className="text-center text-base font-normal">
                   Intraday and F&O
                 </p>
               </div>
@@ -180,8 +180,8 @@ export const Home = () => {
 
           {/* Fifth Section */}
           <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div className="mb-4 md:mb-0 p-5 bg-slate-100 overflow-hidden rounded-lg">
-              <img src={Varsity} alt="" className="rounded-lg" />
+            <div className="mb-4 md:mb-0 p-5 bg-white flex justify-center items-center overflow-hidden rounded-lg">
+              <img src={Varsity} alt="" className="rounded-lg max-w-[100%]" />
             </div>
 
             <div>
