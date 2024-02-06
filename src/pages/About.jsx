@@ -110,7 +110,7 @@ const About = () => {
                   </a>{" "}
                   /{" "}
                   <a href="" className="font-medium text-primaryColor">
-                    TradingQnA
+                    Trading QnA
                   </a>{" "}
                   /{" "}
                   <a href="" className="font-medium text-primaryColor ">
