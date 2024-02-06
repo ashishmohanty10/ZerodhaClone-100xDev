@@ -4,20 +4,20 @@ import Img2 from "../assets/largest-broker.svg";
 import Button from "../components/Button";
 import PressLogo from "../assets/press-logos.png";
 import Ecosystem from "../assets/ecosystem.png";
-import Education from "../assets/index-education.svg";
+import Varsity from "../assets/index-education.svg";
 import { ThemeContext } from "../context/ThemeProvider";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CTA from "../components/CTA";
 
 export const Home = () => {
-  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           <div className="flex flex-col justify-center items-center py-16 ">
-            <img src={Landing} alt="" className="w-[1000px] mb-4" />
+            <img src={Landing} alt="" className="w-[1000px] mb-4 rounded-lg" />
 
             <h1 className="text-4xl font-medium mb-4 dark:text-slate-100">
               Invest in everything
@@ -32,8 +32,8 @@ export const Home = () => {
 
           {/* Second section */}
           <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div className="mb-4 flex justify-center items-center">
-              <img src={Img2} alt="" />
+            <div className="mb-4 flex justify-center items-center overflow-hidden">
+              <img src={Img2} alt="" className="rounded-lg" />
             </div>
 
             <div>
@@ -117,7 +117,7 @@ export const Home = () => {
             </div>
 
             <div className="flex justify-center items-center flex-col">
-              <img src={Ecosystem} alt="" className="mb-4" />
+              <img src={Ecosystem} alt="" className="mb-4 rounded-lg" />
 
               <div className="flex justify-center items-center gap-10">
                 <CTA title={"Explore Our Products"} />
@@ -180,8 +180,8 @@ export const Home = () => {
 
           {/* Fifth Section */}
           <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
-            <div className="mb-4 md:mb-0">
-              <img src={Education} alt="" />
+            <div className="mb-4 md:mb-0 p-5 bg-slate-100 overflow-hidden rounded-lg">
+              <img src={Varsity} alt="" className="rounded-lg" />
             </div>
 
             <div>

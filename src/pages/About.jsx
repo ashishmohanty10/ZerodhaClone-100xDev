@@ -5,7 +5,7 @@ import { AboutData as AboutDataList } from "../components/AboutDataList";
 import TeamMember from "../components/TeamMember";
 
 const About = () => {
-  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   const [dropDownStates, setDropDownStates] = useState(false);
 
   const handleDropDown = () => {
@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           <div className="flex items-center justify-center py-16 border-b border-slate-400 dark:border-primaryColor">
             <h3 className="text-4xl font-medium dark:text-slate-100 text-center w-[70%]">
@@ -87,21 +87,23 @@ const About = () => {
               </div>
 
               <div className="text-base font-normal">
-                <p className="mb-4">
+                <p className="mb-4 dark:text-slate-100">
                   Nithin bootstrapped and founded Zerodha in 2010 to overcome
                   the hurdles he faced during his decade long stint as a trader.
                   Today, Zerodha has changed the landscape of the Indian broking
                   industry.
                 </p>
 
-                <p className="mb-4">
+                <p className="mb-4 dark:text-slate-100">
                   He is a member of the SEBI Secondary Market Advisory Committee
                   (SMAC) and the Market Data Advisory Committee (MDAC).
                 </p>
 
-                <p className="mb-4">Playing basketball is his zen.</p>
+                <p className="mb-4 dark:text-slate-100">
+                  Playing basketball is his zen.
+                </p>
 
-                <p className="text-base font-normal">
+                <p className="text-base font-normal dark:text-slate-100">
                   Connect on
                   <a href="" className="px-1 font-medium text-primaryColor">
                     Homepage
@@ -122,7 +124,7 @@ const About = () => {
           {/* Fourth section */}
 
           <div className="py-16">
-            <div className="grid items-center justify-between grid-cols-1 gap-10 md:grid-cols-3">
+            <div className="grid items-center justify-between grid-cols-1 gap-10 md:grid-cols-3 dark:text-slate-100">
               {AboutDataList.map((data) => (
                 <TeamMember data={data} />
               ))}

@@ -8,18 +8,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Pricing = () => {
-  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
 
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           {/* first section */}
           <div className="flex flex-col items-center justify-center py-16 border-b border-slate-300 dark:border-primaryColor">
             <h1 className="text-4xl font-medium text-center dark:text-slate-100">
               Pricing
             </h1>
-            <p className="mt-2 text-xl text-center">
+            <p className="mt-2 text-xl text-center dark:text-slate-100">
               Free equity investments and flat ₹20 intraday and F&O trades
             </p>
           </div>
@@ -32,11 +32,11 @@ const Pricing = () => {
                 <img src={PricingImg2} alt="" className="w-[250px]" />
               </div>
 
-              <h3 className="text-3xl font-medium text-center">
+              <h3 className="text-3xl font-medium text-center dark:text-slate-100">
                 Free equity delivery
               </h3>
 
-              <p className="mt-2 text-base text-center">
+              <p className="mt-2 text-base text-center dark:text-slate-100">
                 All equity delivery investments (NSE, BSE), are absolutely free
                 — ₹ 0 brokerage.
               </p>
@@ -48,11 +48,11 @@ const Pricing = () => {
                 <img src={PricingImg1} alt="" className="w-[250px]" />
               </div>
 
-              <h3 className="text-3xl font-medium text-center">
+              <h3 className="text-3xl font-medium text-center dark:text-slate-100">
                 Intraday and F&O trades
               </h3>
 
-              <p className="mt-2 text-xl text-center">
+              <p className="mt-2 text-xl text-center dark:text-slate-100">
                 Flat ₹ 20 or 0.03% (whichever is lower) per executed order on
                 intraday trades across equity, currency, and commodity trades.
                 Flat ₹20 on all option trades.
@@ -65,11 +65,11 @@ const Pricing = () => {
                 <img src={PricingImg2} alt="" className="w-[250px]" />
               </div>
 
-              <h3 className="text-2xl font-medium text-center">
+              <h3 className="text-2xl font-medium text-center dark:text-slate-100">
                 Free direct MF
               </h3>
 
-              <p className="mt-2 text-xl text-center">
+              <p className="mt-2 text-xl text-center dark:text-slate-100">
                 All direct mutual fund investments are absolutely free — ₹ 0
                 commissions & DP charges.
               </p>
@@ -83,7 +83,7 @@ const Pricing = () => {
               Open a Zerodha account
             </h3>
 
-            <p className="mt-4 text-base text-center">
+            <p className="mt-4 text-base text-center dark:text-slate-100">
               Modern platforms and apps, ₹0 investments, and flat ₹20 intraday
               and F&O trades.
             </p>
@@ -110,7 +110,7 @@ const Pricing = () => {
 
           <div className="py-10">
             <ul className="text-xs flex flex-col justify-start gap-y-2">
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}
@@ -122,7 +122,7 @@ const Pricing = () => {
                 GST per order.
               </li>
 
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}
@@ -133,7 +133,7 @@ const Pricing = () => {
                 Digital contract notes will be sent via e-mail.
               </li>
 
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}
@@ -145,7 +145,7 @@ const Pricing = () => {
                 ₹20 per contract note. Courier charges apply.
               </li>
 
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}
@@ -157,7 +157,7 @@ const Pricing = () => {
                 equity (whichever is lower).
               </li>
 
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}
@@ -169,7 +169,7 @@ const Pricing = () => {
                 equity (whichever is lower).
               </li>
 
-              <li className="flex justify-start items-center gap-2">
+              <li className="flex justify-start items-center gap-2 dark:text-slate-100">
                 <span>
                   <FontAwesomeIcon
                     icon={faCircle}

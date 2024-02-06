@@ -5,7 +5,7 @@ const Footer = () => {
   const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           <div className="py-16">
             <p className="text-xs text-slate-400 mb-2">

@@ -4,10 +4,10 @@ import { IoIosSearch } from "react-icons/io";
 import SupportLinkList from "../components/SupportLinkList";
 
 const Support = () => {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+    <div className={darkTheme ? "dark" : ""}>
+      <div className="dark:bg-dark">
         <div className="py-16 bg-primaryColor">
           <div className="container">
             <div className="flex  justify-between items-center">
@@ -84,7 +84,7 @@ const Support = () => {
 
         <div className="container">
           <div className="py-16">
-            <h3 className="font-normal text-2xl text-slate-700">
+            <h3 className="font-normal text-2xl text-slate-700 dark:text-slate-100">
               To create a ticket, select a relevant topic
             </h3>
 

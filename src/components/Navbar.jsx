@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className={darkTheme ? "dark sticky top-0 z-50" : "sticky top-0 z-50"}>
-      <div className="py-5 border-b-2 border-slate-200 sticky top-0 bg-white dark:bg-slate-800 dark:border-primaryColor">
+      <div className="py-5 border-b-2 border-slate-200 sticky top-0 bg-white dark:bg-dark dark:border-primaryColor">
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="w-[20vh]">

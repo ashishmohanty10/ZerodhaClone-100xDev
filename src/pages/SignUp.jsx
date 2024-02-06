@@ -4,10 +4,10 @@ import SignupImg from "../assets/signup.png";
 import Button from "../components/Button";
 
 const SignUp = () => {
-  const { darkTheme, toggleDarkMode } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           <div className="md:grid grid-cols-2 justify-between items-center gap-40 py-16">
             <div className="mb-5 md:mb-0">
@@ -33,7 +33,7 @@ const SignUp = () => {
                   <label
                     className={
                       darkTheme
-                        ? "bg-slate-800 text-sm font-normal text-slate-500 absolute -top-3 left-3 px-2"
+                        ? "bg-dark text-sm font-normal text-slate-500 absolute -top-3 left-3 px-2"
                         : "text-sm font-normal text-slate-500 absolute bg-white -top-3 left-3 px-2"
                     }
                   >
@@ -48,7 +48,7 @@ const SignUp = () => {
                     autofocus="autofocus"
                     className={
                       darkTheme
-                        ? "bg-slate-800 border border-slate-300 rounded-sm w-full md:max-w-[300px] h-12 pl-16 outline-slate-400 text-slate-300"
+                        ? "bg-dark border border-slate-300 rounded-sm w-full md:max-w-[300px] h-12 pl-16 outline-slate-400 text-slate-300"
                         : "border border-slate-300 rounded-sm w-full md:max-w-[300px] h-12 pl-16 outline-slate-400"
                     }
                   />

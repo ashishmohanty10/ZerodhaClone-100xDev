@@ -13,7 +13,7 @@ const TopFooter = () => {
   const { darkTheme } = useContext(ThemeContext);
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-slate-800">
+      <div className="dark:bg-dark">
         <div className="container">
           <div className="py-16">
             <section className="grid md:grid-cols-2 lg:grid-cols-4 justify-between items-start gap-5">
@@ -21,7 +21,7 @@ const TopFooter = () => {
               <div className="flex flex-col gap-y-4 mb-5 lg:mb-0">
                 <img src={Logo} alt="" className="w-[150px]" />
 
-                <p className="text-xs">
+                <p className="text-xs text-slate-600">
                   © 2010 - 2024, Zerodha Broking Ltd.
                   <br /> All rights reserved.
                 </p>
