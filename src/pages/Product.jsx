@@ -69,7 +69,7 @@ const Product = () => {
           {/* Console */}
           <div className="py-16">
             <div className="md:grid items-center justify-between grid-cols-2 gap-5">
-              <div className="order-1 md:order-2">
+              <div className="">
                 <h3 className="mb-5 text-3xl font-semibold dark:text-slate-100">
                   Console
                 </h3>
@@ -85,7 +85,7 @@ const Product = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center order-2 md:order-1">
+              <div className="flex items-center justify-center ">
                 <img src={Console} alt="" />
               </div>
             </div>
